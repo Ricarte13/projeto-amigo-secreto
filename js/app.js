@@ -23,7 +23,6 @@ function sortear() {
         }else {
             sorteio.innerHTML = sorteio.innerHTML + amigos[i] + ' --> ' + amigos[i + 1] + '<br>';
         }
-       
     }
 }
 
@@ -37,5 +36,11 @@ function embaralha(lista) {
         [lista[indice], lista[indiceAleatorio]] = 
             [lista[indiceAleatorio], lista[indice]];
     }
+}
+
+function reiniciar() {
+    amigos = [];
+    document.getElementById('lista-amigos').innerHTML = '';
+    document.getElementById('lista-sorteio').innerHTML = '';
 }
 
